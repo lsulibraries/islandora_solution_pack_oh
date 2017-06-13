@@ -1,0 +1,8 @@
+name = "Islandora Audio"
+description = "A default Islandora Repository module to handle audio files"
+dependencies[] = islandora
+package = Islandora Solution Packs
+core = 7.x
+version = 7.x-dev
+configure = admin/islandora/solution_pack_config/audio
+stylesheets[all][] = css/islandora_oral_history.theme.css
