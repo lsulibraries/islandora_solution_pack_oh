@@ -1,0 +1,9 @@
+name = "Islandora Oral History"
+description = "An Islandora Repository module to handle Oral History objects"
+dependencies[] = islandora
+dependencies[] = islandora_audio
+package = Islandora Solution Packs
+core = 7.x
+version = 7.x-dev
+configure = admin/islandora/solution_pack_config/oh
+stylesheets[all][] = css/islandora_oh.theme.css
