@@ -67,7 +67,7 @@ function islandora_oh_oh_upload_form(array $form, array &$form_state) {
       '#title' => t('Index File'),
       '#type' => 'managed_file',
       '#required' => FALSE,
-      '#description' => t('Select a file to upload.<br/>Files must be less than <strong>@size MB.</strong><br/>Allowed file types: <strong>@ext.</strong>', array('@size' => $upload_size, '@ext' => 'pdf')),
+      '#description' => t('If provided, the index will be linked on the object page.<br/>Select a file to upload.<br/>Files must be less than <strong>@size MB.</strong><br/>Allowed file types: <strong>@ext.</strong>', array('@size' => $upload_size, '@ext' => 'pdf')),
       '#default_value' => isset($form_state['values']['index_file']) ? $form_state['values']['index_file'] : NULL,
       '#upload_location' => 'temporary://',
       '#upload_validators' => array(
@@ -80,7 +80,7 @@ function islandora_oh_oh_upload_form(array $form, array &$form_state) {
       '#title' => t('Transcript PDF'),
       '#type' => 'managed_file',
       '#required' => FALSE,
-      '#description' => t('Select a file to upload.<br/>Files must be less than <strong>@size MB.</strong><br/>Allowed file types: <strong>@ext.</strong>', array('@size' => $upload_size, '@ext' => 'pdf')),
+      '#description' => t('If provided, the transcript will be displayed with the audio player.<br/>Select a file to upload.<br/>Files must be less than <strong>@size MB.</strong><br/>Allowed file types: <strong>@ext.</strong>', array('@size' => $upload_size, '@ext' => 'pdf')),
       '#default_value' => isset($form_state['values']['transcript_pdf']) ? $form_state['values']['transcript_pdf'] : NULL,
       '#upload_location' => 'temporary://',
       '#upload_validators' => array(

@@ -10,10 +10,15 @@
 
 <div class="islandora-audio-object islandora" vocab="http://schema.org/" prefix="dcterms: http://purl.org/dc/terms/" typeof="AudioObject">
   <div class="islandora-audio-content-wrapper clearfix">
+    <?php if (isset($index_url)): ?>
+      <div class="islandora-oh-index-url">
+        <a href="<?php print $index_url; ?>">Index</a>
+      </div>
+    <?php endif; ?>  
     <?php if (isset($islandora_content)): ?>
       <div class="islandora-audio-content">
         <?php print $islandora_content; ?>
-        <?php print $index_pdf; ?>
+        <?php print $transcript_pdf; ?>
       </div>
     <?php endif; ?>
   </div>
