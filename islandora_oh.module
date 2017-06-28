@@ -142,7 +142,7 @@ function islandora_oh_preprocess_islandora_oh(array &$variables) {
   }
   // Borrowing from PDF.
   module_load_include('inc', 'islandora', 'includes/solution_packs');
-  $viewer = islandora_get_viewer(array('dsid' => 'TRANSCRIPT'), 'islandora_pdf_viewers', $islandora_object);
+  $viewer = islandora_get_viewer(array('dsid' => 'PDF-TRANSCRIPT'), 'islandora_pdf_viewers', $islandora_object);
 
   $variables['transcript_pdf'] = $viewer ? $viewer : '';
   if (isset($islandora_object['INDEX']) && islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $islandora_object['INDEX'])) {

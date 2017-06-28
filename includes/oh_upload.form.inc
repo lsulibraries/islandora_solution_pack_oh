@@ -176,12 +176,12 @@ function islandora_oh_oh_upload_form_submit(array $form, array &$form_state) {
     }
   }
   if ($form_state['values']['transcript_pdf']) {
-    if (empty($object['TRANSCRIPT'])) {
-      $obj = $object->constructDatastream('TRANSCRIPT', 'M');
+    if (empty($object['PDF-TRANSCRIPT'])) {
+      $obj = $object->constructDatastream('PDF-TRANSCRIPT', 'M');
       $object->ingestDatastream($obj);
     }
     else {
-      $obj = $object['TRANSCRIPT'];
+      $obj = $object['PDF-TRANSCRIPT'];
     }
     $index_file = file_load($form_state['values']['transcript_pdf']);
     $obj->setContentFromFile(drupal_realpath($index_file->uri), FALSE);

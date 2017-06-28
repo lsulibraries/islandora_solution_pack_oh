@@ -31,7 +31,7 @@
   <dsTypeModel ID="INDEX" optional="true">
     <form MIME="application/pdf"></form>
   </dsTypeModel>
-  <dsTypeModel ID="TRANSCRIPT" optional="true">
+  <dsTypeModel ID="PDF-TRANSCRIPT" optional="true">
     <form MIME="application/pdf"></form>
   </dsTypeModel>
   <dsTypeModel ID="TECHMD">
